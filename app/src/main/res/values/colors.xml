@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Светлая тема -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+    <!-- Цвета для светлой темы -->
+    <color name="textColorPrimary">#000000</color> <!-- Черный цвет для светлой темы -->
+    <color name="textColorSecondary">#666666</color> <!-- Серый цвет для светлой темы -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- Белый фон для светлой темы -->
+
+    <!-- Темная тема -->
+    <color name="purple_200_dark">#FFBB86FC</color>
+    <color name="purple_500_dark">#FF3700B3</color>
+    <color name="purple_700_dark">#FF6200EE</color>
+    <color name="teal_200_dark">#FF03DAC5</color>
+    <color name="teal_700_dark">#FF018786</color>
+    <color name="black_dark">#FFFFFFFF</color>
+    <color name="white_dark">#FF000000</color>
+    <color name="dark_gray">#FF333333</color> <!-- Темно-серый цвет для темной темы -->
+    <color name="backgroundColor_dark">#121212</color> <!-- Темный фон для темной темы -->
+    <color name="textColorPrimary_dark">#FFFFFF</color> <!-- Белый цвет для текста в темной теме -->
+    <color name="textColorSecondary_dark">#B0BEC5</color> <!-- Светло-серый цвет для текста во второстепенных элементах в темной теме -->
+
+    <color name="normal_class_color">#fafafa</color> <!-- Цвет для обычной пары -->
+    <color name="current_class_color">#FF4081</color> <!-- Цвет для длинной пары (например, 1.5 часа) -->
+</resources>
