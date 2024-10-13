@@ -56,7 +56,7 @@ class MyWidget : AppWidgetProvider() {
                 views.addView(R.id.schedule_container, createRow(context, classInfo))
             }
         } else {
-            views.addView(R.id.schedule_container, createRow(context, "Нет данных", "", "", "", "", ""))
+            views.addView(R.id.schedule_container, createRow(context, "", "Нет данных", "", "", "", "", ""))
         }
 
         appWidgetManager.updateAppWidget(appWidgetId, views)
@@ -89,6 +89,7 @@ class MyWidget : AppWidgetProvider() {
         row.setTextViewText(R.id.room, scheduleItem.room)
         row.setTextViewText(R.id.teacher, scheduleItem.teacher)
         row.setTextViewText(R.id.type, scheduleItem.type)
+        row.setTextViewText(R.id.building, scheduleItem.building)
 
         // Установка видимости даты
         if (scheduleItem.date != "чет" && scheduleItem.date != "неч" && scheduleItem.date.isNotEmpty()) {
@@ -102,7 +103,7 @@ class MyWidget : AppWidgetProvider() {
         return row
     }
 
-    private fun createRow(context: Context, time: String, discipline: String, room: String, teacher: String, type: String, date: String): RemoteViews {
+    private fun createRow(context: Context, time: String, discipline: String, room: String, teacher: String, type: String, date: String, building: String): RemoteViews {
         val row = RemoteViews(context.packageName, R.layout.schedule_row)
 
         row.setTextViewText(R.id.time, time)
@@ -110,6 +111,7 @@ class MyWidget : AppWidgetProvider() {
         row.setTextViewText(R.id.room, room)
         row.setTextViewText(R.id.teacher, teacher)
         row.setTextViewText(R.id.type, type)
+        row.setTextViewText(R.id.building, building)
 
         if (date != "чет" && date != "неч") {
             row.setTextViewText(R.id.date, date)
@@ -145,7 +147,8 @@ class MyWidget : AppWidgetProvider() {
         val room: String,
         val teacher: String,
         val type: String,
-        val date: String
+        val date: String,
+        val building: String
     ) {
         companion object {
             fun fromJson(jsonObject: JSONObject): ScheduleItem {
@@ -155,7 +158,8 @@ class MyWidget : AppWidgetProvider() {
                     room = jsonObject.getString("Room"),
                     teacher = jsonObject.getString("Teacher"),
                     type = jsonObject.getString("Type"),
-                    date = jsonObject.getString("Date")
+                    date = jsonObject.getString("Date"),
+                    building = jsonObject.getString("Building")
                 )
             }
         }
