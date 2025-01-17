@@ -3,4 +3,7 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>
+    <string name="previous_day">Предыдущий день</string>
+    <string name="next_day">Следующий день</string>
+    <string name="toggle_week">Переключить неделю</string>
 </resources>

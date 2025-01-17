@@ -10,10 +10,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingHorizontal="12dp"
-        android:paddingVertical="8dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
         android:background="@drawable/header_background"
         android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/button_toggle_week"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="#F4A900"
+            android:layout_margin="12dp"
+            android:padding="4dp"
+            android:src="@drawable/refresh_arrow"
+            android:contentDescription="@string/toggle_week"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:textStyle="bold"
+            android:background="#404040"
+            />
 
         <TextView
             android:id="@+id/appwidget_current_day"
@@ -46,7 +65,38 @@
             android:textColor="#fafafa"
             />
 
+        <ImageButton
+            android:id="@+id/button_previous_day"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="#F4A900"
+            android:layout_margin="12dp"
+            android:padding="4dp"
+            android:src="@drawable/arrowhead"
+            android:rotation="180"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/previous_day"
+            />
 
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:textStyle="bold"
+            android:background="#404040"
+            />
+
+
+        <ImageButton
+            android:id="@+id/button_next_day"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="#F4A900"
+            android:layout_margin="12dp"
+            android:padding="4dp"
+            android:src="@drawable/arrowhead"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/next_day"
+             />
 
 
     </LinearLayout>

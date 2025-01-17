@@ -12,7 +12,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -48,4 +48,5 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
     implementation("com.google.code.gson:gson:2.8.9")
     implementation("androidx.work:work-runtime-ktx:$work_version")
+    implementation ("com.google.android.material:material:1.9.0")
 }
